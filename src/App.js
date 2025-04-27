@@ -11,12 +11,6 @@ function App() {
   const addContact = (newContact) => {
     setContact([...contact,newContact])
   }
-
-
-  //to check if contacts are being added or not
-  useEffect(() => {
-    console.log(contact);
-  }, [contact]);
   
 
   return (
