@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import '../css/ContactForm.css'
 
 function ContactForm(props) {
 

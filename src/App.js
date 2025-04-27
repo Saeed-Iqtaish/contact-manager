@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import ContactForm from './components/ContactForm';
-import ContanctList from './components/ContanctList';
+import ContactList from './components/ContactList';
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
     <ContactForm addContact = {addContact}/>
-    <ContanctList contact = {contact} deleteContact = {deleteContact}/>
+    <ContactList contact = {contact} deleteContact = {deleteContact}/>
     </>
   );
 }
