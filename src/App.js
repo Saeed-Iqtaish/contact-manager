@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 import ContactForm from './components/ContactForm';
+import ContanctList from './components/ContanctList';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
     <ContactForm addContact = {addContact}/>
+    <ContanctList contact = {contact}/>
     </>
   );
 }
