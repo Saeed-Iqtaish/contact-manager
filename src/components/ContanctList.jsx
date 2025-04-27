@@ -10,7 +10,12 @@ function ContanctList(props) {
                 ) : (
                     props.contact.map((contact, index) => (
                         <li key={index}>
-                            {props.contact.map((contact, index) => <ContactItem contact={contact} index={index} />)}
+                            {props.contact.map((contact, index) =>
+                                <ContactItem
+                                    contact={contact}
+                                    index={index}
+                                    deleteContact={props.deleteContact}
+                                />)}
                         </li>
                     ))
                 )}

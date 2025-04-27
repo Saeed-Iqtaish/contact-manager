@@ -11,12 +11,16 @@ function App() {
   const addContact = (newContact) => {
     setContact([...contact,newContact])
   }
+
+  const deleteContact = (indexToDelete) => {
+    setContact(contact.filter((_, index) => index !== indexToDelete));
+  };
   
 
   return (
     <>
     <ContactForm addContact = {addContact}/>
-    <ContanctList contact = {contact}/>
+    <ContanctList contact = {contact} deleteContact = {deleteContact}/>
     </>
   );
 }
